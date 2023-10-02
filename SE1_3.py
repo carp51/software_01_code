@@ -1,7 +1,7 @@
 #開発者作成部分
 class MyMax:
     def __init__(self, a):
-        self.__max = -1
+        self.__max = a[0]
         for j in range(1, len(a)):
             if a[j] > self.__max:
                 self.__max = a[j] 

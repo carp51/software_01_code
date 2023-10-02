@@ -2,11 +2,13 @@
 class MyMax:
     def __init__(self, a):
         self.__max = a[0]
+        #max位置を格納するリスト
         self.__index = []
         for j in range(1, len(a)):
             if a[j] > self.__max:
                 self.__max = a[j] 
         
+        #maxの値が決まってからmaxの位置を格納
         for j in range(1, len(a)):
             if a[j] == self.__max:
                 self.__index.append(j)
